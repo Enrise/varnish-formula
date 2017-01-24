@@ -1,0 +1,8 @@
+{% set varnish = salt['grains.filter_by']({
+    'Debian': {
+        'pkg': 'varnish',
+        'service': 'varnish',
+        'config_file': '/etc/default/varnish',
+        'vcl_file': '/etc/varnish/default.vcl',
+    },
+}, merge=salt['pillar.get']('varnish:lookup'), default='Debian') %}

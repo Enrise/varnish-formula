@@ -1,0 +1,17 @@
+varnish:
+# Override lookup
+#  lookup:
+#    pkg: varnish
+#    service: varnish
+#    config_file: '/etc/default/varnish'
+#    vcl_file: '/etc/varnish/default.vcl'
+
+  ## Varnish config
+  # Specify the version here
+  version: 4.0
+
+  # Override the config templates to use.
+  # The pillar content will be passed for processing
+  config_files:
+    config: 'salt://varnish/templates/config.jinja'
+    vcl: 'salt://varnish/templates/default.vcl.jinja'
