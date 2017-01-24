@@ -1,2 +1,3 @@
 # Testing with Varnish 4.0
-# NOOP
+varnish:
+  version: 4.0
