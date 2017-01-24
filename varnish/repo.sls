@@ -21,4 +21,4 @@ varnish_repo:
     - keyid: C4DEFFEB
     - keyserver: keyserver.ubuntu.com
     - require_in:
-      - pkg: varnish
+      - pkg: {{ varnish_map.pkg }}
