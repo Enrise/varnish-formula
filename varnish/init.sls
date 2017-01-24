@@ -2,3 +2,4 @@
 include:
   - .install
   - .conf
+  - .service
