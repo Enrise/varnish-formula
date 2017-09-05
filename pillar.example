@@ -6,12 +6,8 @@ varnish:
   #  config_file: '/etc/default/varnish'
   #  vcl_file: '/etc/varnish/default.vcl'
 
-  ## Specify the version here
+  ## Specify the version here, this is being used for the repository
   # version: 4.0
-
-  ## If a version >= 5.0 is desired, you should specify the actual URL
-  ## since there is no APT repository for Varnish 5.0+ at this time
-  #pkg_url: http://repo.varnish-cache.org/pkg/5.0.0/varnish_5.0.0-1_amd64.deb
 
   ## Override the config templates to use.
   ## The pillar content will be available for processing
