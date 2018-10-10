@@ -9,7 +9,9 @@ env:
     - STATE=varnish
   matrix:
     - SALT_ARGS="-l debug --local --retcode-passthrough --pillar-root=.salt/pillar/varnish4.0 --file-root=$PWD"
-    - SALT_ARGS="-l debug --local --retcode-passthrough --pillar-root=.salt/pillar/varnish5.0 --file-root=$PWD"    
+    - SALT_ARGS="-l debug --local --retcode-passthrough --pillar-root=.salt/pillar/varnish5.0 --file-root=$PWD"
+    - SALT_ARGS="-l debug --local --retcode-passthrough --pillar-root=.salt/pillar/varnish6.0 --file-root=$PWD"
+    - SALT_ARGS="-l debug --local --retcode-passthrough --pillar-root=.salt/pillar/varnish6.1 --file-root=$PWD"
 
 before_install:
   - sudo apt-get update
