@@ -7,6 +7,7 @@ This formula will install the latest stable version of Varnish from the official
 ## Compatibility
 
 This formula currently only works on Debian-based systems (Debian, Ubuntu etc).
+Although the formula might work on retired releases we're currently only testing the formula on the latest supported versions listed at [varnish-cache.org](https://varnish-cache.org/releases/).
 
 ## Contributing
 
